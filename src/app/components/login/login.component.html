@@ -1,0 +1,46 @@
+<body class="text-center">
+  <main class="form-signin">
+    <form [formGroup]="loginForm">
+      <h1 class="h3 mb-3 fw-normal">Giriş yap</h1>
+
+      <div class="form-floating">
+        <input
+          formControlName="userName"
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Kullanıcı"
+        />
+        <label for="floatingInput">Kullanıcı Adı</label>
+      </div>
+      <div class="form-floating">
+        <input
+          formControlName="role"
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Role"
+        />
+        <label for="floatingrole">Rol</label>
+      </div>
+      <div class="form-floating">
+        <input
+        formControlName="password"
+          type="password"
+          class="form-control"
+          id="floatingRole"
+          placeholder="Password"
+        />
+        <label for="floatingPassword">Parola</label>
+      </div>
+
+      <div class="checkbox mb-3">
+      
+      </div>
+      <button  class="w-100 btn btn-lg btn-primary" (click)="login()"
+      (click)="goToPage('user')">
+        Giriş yap
+      </button>
+    </form>
+  </main>
+</body>

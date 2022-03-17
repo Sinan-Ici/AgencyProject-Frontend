@@ -1,0 +1,86 @@
+<body class="text-center">
+    <main class="form-signin">
+      <form [formGroup]="loginForm">
+        <h1 class="h3 mb-3 fw-normal">CRUD</h1>
+        <div class="form-floating">
+          <input
+            formControlName="userID"
+            type="text"
+            class="form-control"
+            id="floatingID"
+            placeholder="UserID"
+          />
+          <label for="floatingInput">UserID</label>
+        </div>
+  
+        <div class="form-floating">
+          <input
+            formControlName="userName"
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Kullanıcı"
+          />
+          <label for="floatingInput">Kullanıcı Adı</label>
+        </div>
+        <div class="form-floating">
+          <input
+            formControlName="role"
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Role"
+          />
+          <label for="floatingrole">Rol</label>
+        </div>
+        <div class="form-floating">
+          <input
+            formControlName="agency"
+            type="text"
+            class="form-control"
+            id="floatingAgency"
+            placeholder="Agency"
+          />
+          <label for="floatingInput">Agency</label>
+        </div>
+        <div class="form-floating">
+          <input
+          formControlName="password"
+            type="password"
+            class="form-control"
+            id="floatingRole"
+            placeholder="Password"
+          />
+          
+          <label for="floatingPassword">Parola</label>
+        </div>
+  
+        <div class="checkbox mb-3">
+          <div class="row">
+            <div class="col-md-3">
+        
+        
+        <button  class=" btn btn-outline-primary" (click)="addAgency()">
+          Ajans Ekle
+        </button>
+      </div>
+      <div class="col-md-3">
+        <button  class=" btn btn-outline-primary" (click)="addCustomer()">
+            Müşteri Ekle
+          </button>
+        </div>
+          <div class="col-md-3">
+          <button  class="btn btn-outline-primary" (click)="deleteAgency()">
+            Ajans Sil
+          </button>
+        </div>
+          <div class="col-md-3">
+          <button  class="btn btn-outline-primary" (click)="deleteCustomer()">
+            Müşteri Sil
+          </button>
+        </div>
+      </div>
+      </div>
+      </form>
+    </main>
+  </body>
